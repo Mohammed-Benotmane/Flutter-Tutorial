@@ -14,8 +14,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown[300],
       ),
       body: Center(
-        child: Image(
-          image: AssetImage('assets/costume2.jpg'),
+        child: RaisedButton(
+          onPressed: (){
+            print('you clicked me');
+          },
+          child: Text('click here'),
+          color: Colors.amber[600],
         ),
       ),
       floatingActionButton: FloatingActionButton(
