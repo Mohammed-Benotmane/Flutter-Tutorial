@@ -13,15 +13,10 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.brown[300],
       ),
-      body: Center(
-        child: RaisedButton.icon(
-          onPressed: (){},
-          label: Text('Click here'),
-          icon: Icon(
-            Icons.airport_shuttle,
-          ),
-          color: Colors.amber[600],
-        ),
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+        color: Colors.brown[100],
+        child: Text('hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
