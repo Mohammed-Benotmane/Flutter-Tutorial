@@ -14,11 +14,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown[300],
       ),
       body: Center(
-        child: RaisedButton(
-          onPressed: (){
-            print('you clicked me');
-          },
-          child: Text('click here'),
+        child: RaisedButton.icon(
+          onPressed: (){},
+          label: Text('Click here'),
+          icon: Icon(
+            Icons.airport_shuttle,
+          ),
           color: Colors.amber[600],
         ),
       ),
