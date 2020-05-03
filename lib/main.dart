@@ -15,6 +15,7 @@ void main() => runApp(MaterialApp(
             fontWeight: FontWeight.bold,
             letterSpacing: 2.0,
             color: Colors.grey[600],
+            fontFamily: 'IndieFlower',
           ),
       ),
     ),
@@ -25,3 +26,10 @@ void main() => runApp(MaterialApp(
     ),
   ),
 ));
+
+class test extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
