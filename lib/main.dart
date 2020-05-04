@@ -14,7 +14,15 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown[300],
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text('some text'),
+              Text('World'),
+            ],
+          ),
           Container(
             padding: EdgeInsets.all(20.0),
             color: Colors.cyan,
