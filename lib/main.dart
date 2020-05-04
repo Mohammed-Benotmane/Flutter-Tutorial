@@ -4,7 +4,12 @@ void main() => runApp(MaterialApp(
       home: NinjaCard(),
     ));
 
-class NinjaCard extends StatelessWidget {
+class NinjaCard extends StatefulWidget {
+  @override
+  _NinjaCardState createState() => _NinjaCardState();
+}
+
+class _NinjaCardState extends State<NinjaCard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +30,10 @@ class NinjaCard extends StatelessWidget {
                 backgroundImage: AssetImage('assets/costume2.jpg'),
                 radius: 40.0,
               ),
+            ),
+            Divider(
+              height: 90.0,
+              color: Colors.grey[800],
             ),
             Text(
               'NAME',
